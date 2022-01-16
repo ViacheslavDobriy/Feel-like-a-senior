@@ -3,16 +3,13 @@
 double[] Array = new double[15];
 for(int i = 0; i<Array.Length; i++)
 {
-    Array[i] = new Random().Next(0,51);
+    Array[i] = new Random().Next(-50,51);
     Console.Write($"{Array[i]} ");
 }
 Console.WriteLine();
-double Remember = 0;
-for(int i = 0; i<=Array.Length/2; i++)
+for(int i = 0; i<Array.Length; i++)
 {
-    Remember = Array[i];
-    Array[i] = Array[Array.Length-1-i];
-    Array[Array.Length-1-i] = Remember;
+    Array[i] = -Array[i];
 }
 for(int i = 0; i<Array.Length; i++)
 {

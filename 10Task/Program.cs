@@ -18,3 +18,4 @@ for(int i = 1; i<Array.Length; i++)
     if(Array[i]<min) min=Array[i];
 }
 Console.WriteLine($"{min} - минимальное значение в данном массиве");
+Console.WriteLine($"Разница между максимальным и минимальным значением - {max-min}");
